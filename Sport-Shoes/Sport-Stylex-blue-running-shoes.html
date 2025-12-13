@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/styleproduto.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body style="background: rgb(36 36 36);">
+    <div class="container">
+
+        <!-- Inicio header-->
+        <header style="background-color: rgb(204 26 52);">
+            <img class="logo" src="assets/images/logo.png" id="logo">
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+
+            <img class="EUA" src="https://static.todamateria.com.br/upload/ba/nd/bandeira_americana_bb.jpg" alt="">
+            <img class="BR"
+                src="data:image/png;base64,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"
+                alt="">
+            <div class="cadastrar">
+
+                <button style="--content: 'LOGIN'">
+                    <div class="left"></div>
+                    LOGIN
+                    <div class="right"></div>
+                </button>
+                <button style="--content: 'Sign Up'">
+                    <div class="left"></div>
+                    Sign Up
+                    <div class="right"></div>
+                </button>
+
+
+                <path fill="#fff"
+                    d="M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" />
+                </svg></a>
+
+            </div>
+        </header>
+        <!-- Fim header-->
+
+        <!-- Começo Navbar -->
+        <div class="Navbar">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Calçados</a></li>
+                <li><a>Esportes</a></li>
+                <li><a>Contatos</a></li>
+            </ul>
+        </div>
+        <!-- Fim Navbar -->
+
+        <!-- Começo fundo -->
+        <div class="fundo">
+            <div class="Organizar">
+                <img src="assets/images/tenis6.png" class="foto">
+                <div style="width: 70%;">
+                    <h1>Sport Stylex blue running <br> shoes</h1>
+                    <h2>
+                        <i style="font-family: Helvetica; color:yellow; margin-left: 2%;" class="bi bi-star-fill"></i>
+                        <i style="font-family: Helvetica; color: yellow; margin-left: 2%;" class="bi bi-star-fill"></i>
+                        <i style="font-family: Helvetica; color: yellow; margin-left: 2%;" class="bi bi-star-fill"></i>
+                        <i style="font-family: Helvetica; color: yellow; margin-left: 2%;" class="bi bi-star-fill"></i>
+                        <i style="font-family: Helvetica; color: white; margin-left: 2%;" class="bi bi-star-fill"></i>
+                    </h2>
+
+                    <h3 style="font-family: Helvetica; color: white; margin-left: 2%;">DE <s>R$ 429,90</s> POR</h3>
+                    <h2 style="font-family: Helvetica; color: white; margin-left: 2%;">R$ 279,90</h2>
+                    <button class="button button1">COMPRAR</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- Fim fundo -->
+
+
+
+
+
+
+
+
+        <!-- Começo Footer -->
+        <footer style="background-color: #333333; padding: 1%;">
+            <div class="footer-content">
+                <div class="lista">
+                    <h2 style="color: rgb(255, 255, 255); font-size: 5vh;">Contatos</h2>
+                    <ul>
+                        <li">+55 (45) 91232-2342</li>
+                            <br>
+                            <li>+55 (45) 97954-3961</li>
+                            <br>
+                            <li>+55 (45) 94465-7501</li>
+                            <br>
+                            <li>+55 (45) 92589-2549</li>
+                            <br>
+                            <li>+55 (45) 95697-9734</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <div style="margin-bottom: 2.737%;">
+                        <h2 style="color: rgb(255, 255, 255); font-size: 5vh; padding-top: 3px;">Redes Sociais</h2>
+
+
+
+                        <ul>
+                            <i class="bi bi-instagram" style="padding-right: 2%;"></i>
+                            <li>ShoesSportOfficial</li>
+                        </ul>
+
+                        <ul>
+                            <i class="bi bi-youtube" style="padding-right: 2%;"></i>
+                            <li>ShoesSportVideos</li>
+                        </ul>
+
+                        <ul>
+                            <i class="bi bi-facebook" style="padding-right: 2%;"></i>
+                            <li>ShoesSport</li>
+                        </ul>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Fim Footers -->
+
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("logo").addEventListener("click", function () {
+            window.location.href = "index.html"; // página de destino
+        });
+    </script>
+
+</body>
+
+</html>
